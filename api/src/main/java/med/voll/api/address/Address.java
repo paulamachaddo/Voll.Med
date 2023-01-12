@@ -19,7 +19,7 @@ public class Address {
     private String city;
     private String state;
 
-    public Address(AddressRegistration data) {
+    public Address(AddressDto data) {
         this.address = data.address();
         this.number = data.number();
         this.cep = data.cep();
