@@ -7,4 +7,6 @@ import java.util.UUID;
 
 
 public interface DoctorRepository extends JpaRepository<Doctor, UUID> {
+
+
 }
