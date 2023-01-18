@@ -35,4 +35,19 @@ public class Patient {
     this.phone = patient.phone();
     this.address = new Address(patient.address());
     }
+
+    public void updatePatient(updatingPatient data) {
+        if (data.name() != null) {
+            this.name = data.name();
+        }
+        if (data.cpf() != null) {
+            this.cpf = data.cpf();
+        }
+        if (data.phone() != null) {
+            this.phone = data.phone();
+        }
+        if (data.address() != null){
+            this.address.updateData(data.address());
+        }
+    }
 }
